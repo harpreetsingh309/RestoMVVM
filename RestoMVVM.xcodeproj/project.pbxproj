@@ -13,6 +13,13 @@
 		F34ACA0625DA308600CDF7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34ACA0525DA308600CDF7ED /* Assets.xcassets */; };
 		F34ACA0925DA308600CDF7ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34ACA0725DA308600CDF7ED /* LaunchScreen.storyboard */; };
 		F34ACA1225DA32D700CDF7ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F34ACA1125DA32D700CDF7ED /* README.md */; };
+		F34ACA2025DA7B1200CDF7ED /* AbstractLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ACA1F25DA7B1200CDF7ED /* AbstractLayout.swift */; };
+		F34ACA2525DA7C0800CDF7ED /* AbstractCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ACA2425DA7C0800CDF7ED /* AbstractCollectionCell.swift */; };
+		F34ACA2925DA7C4400CDF7ED /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ACA2825DA7C4400CDF7ED /* AbstractController.swift */; };
+		F34ACA2C25DA7C6E00CDF7ED /* AbstractCollectionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ACA2B25DA7C6E00CDF7ED /* AbstractCollectionListController.swift */; };
+		F34ACA3125DA7CF300CDF7ED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ACA3025DA7CF300CDF7ED /* Extensions.swift */; };
+		F34ACA3425DA7D5E00CDF7ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ACA3325DA7D5E00CDF7ED /* Constants.swift */; };
+		F34ACA3825DA85C800CDF7ED /* ListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ACA3725DA85C800CDF7ED /* ListBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		F34ACA0825DA308600CDF7ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F34ACA0A25DA308600CDF7ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F34ACA1125DA32D700CDF7ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F34ACA1F25DA7B1200CDF7ED /* AbstractLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractLayout.swift; sourceTree = "<group>"; };
+		F34ACA2425DA7C0800CDF7ED /* AbstractCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractCollectionCell.swift; sourceTree = "<group>"; };
+		F34ACA2825DA7C4400CDF7ED /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
+		F34ACA2B25DA7C6E00CDF7ED /* AbstractCollectionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractCollectionListController.swift; sourceTree = "<group>"; };
+		F34ACA3025DA7CF300CDF7ED /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F34ACA3325DA7D5E00CDF7ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F34ACA3725DA85C800CDF7ED /* ListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 				F34ACA1A25DA350B00CDF7ED /* Model */,
 				F34ACA1925DA350400CDF7ED /* View */,
 				F34ACA1825DA34FC00CDF7ED /* ViewModel */,
+				F34ACA1D25DA798E00CDF7ED /* Abstraction */,
 				F34ACA1725DA34F300CDF7ED /* Utilities */,
 				F34ACA0225DA308100CDF7ED /* Main.storyboard */,
 				F34ACA0525DA308600CDF7ED /* Assets.xcassets */,
@@ -74,6 +89,8 @@
 		F34ACA1725DA34F300CDF7ED /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F34ACA3025DA7CF300CDF7ED /* Extensions.swift */,
+				F34ACA3325DA7D5E00CDF7ED /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -97,6 +114,42 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F34ACA1D25DA798E00CDF7ED /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				F34ACA1E25DA7AEE00CDF7ED /* Model */,
+				F34ACA2325DA7BCA00CDF7ED /* View */,
+				F34ACA2225DA7BB000CDF7ED /* Controller */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		F34ACA1E25DA7AEE00CDF7ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F34ACA1F25DA7B1200CDF7ED /* AbstractLayout.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F34ACA2225DA7BB000CDF7ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F34ACA2825DA7C4400CDF7ED /* AbstractController.swift */,
+				F34ACA2B25DA7C6E00CDF7ED /* AbstractCollectionListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F34ACA2325DA7BCA00CDF7ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F34ACA2425DA7C0800CDF7ED /* AbstractCollectionCell.swift */,
+				F34ACA3725DA85C800CDF7ED /* ListBackgroundView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34ACA2925DA7C4400CDF7ED /* AbstractController.swift in Sources */,
+				F34ACA2025DA7B1200CDF7ED /* AbstractLayout.swift in Sources */,
 				F34AC9FD25DA308100CDF7ED /* AppDelegate.swift in Sources */,
+				F34ACA2C25DA7C6E00CDF7ED /* AbstractCollectionListController.swift in Sources */,
 				F34AC9FF25DA308100CDF7ED /* SceneDelegate.swift in Sources */,
+				F34ACA2525DA7C0800CDF7ED /* AbstractCollectionCell.swift in Sources */,
+				F34ACA3125DA7CF300CDF7ED /* Extensions.swift in Sources */,
+				F34ACA3425DA7D5E00CDF7ED /* Constants.swift in Sources */,
+				F34ACA3825DA85C800CDF7ED /* ListBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
