@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F34AC9FD25DA308100CDF7ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AC9FC25DA308100CDF7ED /* AppDelegate.swift */; };
 		F34AC9FF25DA308100CDF7ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AC9FE25DA308100CDF7ED /* SceneDelegate.swift */; };
-		F34ACA0125DA308100CDF7ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ACA0025DA308100CDF7ED /* ViewController.swift */; };
 		F34ACA0425DA308100CDF7ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34ACA0225DA308100CDF7ED /* Main.storyboard */; };
 		F34ACA0625DA308600CDF7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34ACA0525DA308600CDF7ED /* Assets.xcassets */; };
 		F34ACA0925DA308600CDF7ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34ACA0725DA308600CDF7ED /* LaunchScreen.storyboard */; };
+		F34ACA1225DA32D700CDF7ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F34ACA1125DA32D700CDF7ED /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F34AC9F925DA308100CDF7ED /* RestoMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestoMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34AC9FC25DA308100CDF7ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F34AC9FE25DA308100CDF7ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F34ACA0025DA308100CDF7ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F34ACA0325DA308100CDF7ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F34ACA0525DA308600CDF7ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F34ACA0825DA308600CDF7ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F34ACA0A25DA308600CDF7ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34ACA1125DA32D700CDF7ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +40,7 @@
 		F34AC9F025DA308100CDF7ED = {
 			isa = PBXGroup;
 			children = (
+				F34ACA1125DA32D700CDF7ED /* README.md */,
 				F34AC9FB25DA308100CDF7ED /* RestoMVVM */,
 				F34AC9FA25DA308100CDF7ED /* Products */,
 			);
@@ -58,13 +59,44 @@
 			children = (
 				F34AC9FC25DA308100CDF7ED /* AppDelegate.swift */,
 				F34AC9FE25DA308100CDF7ED /* SceneDelegate.swift */,
-				F34ACA0025DA308100CDF7ED /* ViewController.swift */,
+				F34ACA1A25DA350B00CDF7ED /* Model */,
+				F34ACA1925DA350400CDF7ED /* View */,
+				F34ACA1825DA34FC00CDF7ED /* ViewModel */,
+				F34ACA1725DA34F300CDF7ED /* Utilities */,
 				F34ACA0225DA308100CDF7ED /* Main.storyboard */,
 				F34ACA0525DA308600CDF7ED /* Assets.xcassets */,
 				F34ACA0725DA308600CDF7ED /* LaunchScreen.storyboard */,
 				F34ACA0A25DA308600CDF7ED /* Info.plist */,
 			);
 			path = RestoMVVM;
+			sourceTree = "<group>";
+		};
+		F34ACA1725DA34F300CDF7ED /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F34ACA1825DA34FC00CDF7ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F34ACA1925DA350400CDF7ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F34ACA1A25DA350B00CDF7ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +158,7 @@
 			files = (
 				F34ACA0925DA308600CDF7ED /* LaunchScreen.storyboard in Resources */,
 				F34ACA0625DA308600CDF7ED /* Assets.xcassets in Resources */,
+				F34ACA1225DA32D700CDF7ED /* README.md in Resources */,
 				F34ACA0425DA308100CDF7ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F34ACA0125DA308100CDF7ED /* ViewController.swift in Sources */,
 				F34AC9FD25DA308100CDF7ED /* AppDelegate.swift in Sources */,
 				F34AC9FF25DA308100CDF7ED /* SceneDelegate.swift in Sources */,
 			);
@@ -287,12 +319,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3BYTBR63S;
 				INFOPLIST_FILE = RestoMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hs.RestoMVVM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.WeatherInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,12 +339,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3BYTBR63S;
 				INFOPLIST_FILE = RestoMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hs.RestoMVVM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.WeatherInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
