@@ -33,37 +33,6 @@ extension UIApplication {
     
 }
 
-// MARK: - Navigation Controller
-extension UINavigationController {
-    
-    override open var shouldAutorotate: Bool {
-        get {
-            if let visibleVC = visibleViewController {
-                return visibleVC.shouldAutorotate
-            }
-            return super.shouldAutorotate
-        }
-    }
-    
-    override open var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
-        get {
-            if let visibleVC = visibleViewController {
-                return visibleVC.preferredInterfaceOrientationForPresentation
-            }
-            return super.preferredInterfaceOrientationForPresentation
-        }
-    }
-    
-    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask{
-        get {
-            if let visibleVC = visibleViewController {
-                return visibleVC.supportedInterfaceOrientations
-            }
-            return super.supportedInterfaceOrientations
-        }
-    }
-}
-
 // MARK: - View Controller
 extension UIViewController {
     
@@ -146,14 +115,6 @@ extension UIView {
             addSubview(view)
         }
     }
-    
-    func addShadow(_ x: CGFloat, _ y: CGFloat, _ blur: CGFloat, color: UIColor = UIColor.lightGray, opacity: Float = 0.4) {
-        layer.shadowOpacity = opacity // opacity, 10%
-        layer.shadowColor = color.cgColor
-        layer.shadowRadius = blur // blur
-        layer.shadowOffset = CGSize(width: x, height: y) // Spread x, y
-        layer.masksToBounds =  false
-    }
 
     func addVisualConstraints(_ constraints: [String], subviews: [String: UIView]) {
         addVisualConstraints(constraints, metrics: nil, subviews: subviews)
@@ -203,6 +164,19 @@ extension UIView {
         addConstraint(constraint)
         return constraint
     }
+    
+    func applyGradient() {
+        layer.sublayers?.filter({ $0 is CAGradientLayer }).forEach({ $0.removeFromSuperlayer() })
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.colors = [
+            UIColor.init(white: 1, alpha: 0).cgColor,
+            UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.7).cgColor
+        ]
+        backgroundColor = .clear
+        gradientLayer.frame = bounds
+        layer.insertSublayer(gradientLayer, at: 0)
+    }
 }
 
 // MARK: - Alert Controller
@@ -223,13 +197,5 @@ extension UIAlertController {
         } else {
             UIApplication.visibleViewController.present(alertView!, animated: true, completion: nil)
         }
-    }
-    
-    open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.portrait
-    }
-    
-    open override var shouldAutorotate: Bool {
-        return false
     }
 }

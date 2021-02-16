@@ -11,8 +11,9 @@ Features
 
 2. Switch between home listing and favourite list of restaurant.
 
-3. Use image caching to ensure the images only download once.
+3. Can use image caching to ensure the images only download once. (SDWebImage Or Kingfisher) 
 
 4. Tapping favourite/unfavourite should toggle the button.
 
-// com.hs.RestoMVVM
+Note:
+Developer platform of Zomato is not working, so I munually added mock data into JSON file to show listing.
