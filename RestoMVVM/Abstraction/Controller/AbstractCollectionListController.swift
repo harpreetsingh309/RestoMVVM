@@ -30,7 +30,7 @@ class AbstractCollectionListController: UICollectionViewController, UICollection
     internal var page = 0
     internal var isPageAvailable = false
     internal var items: Array<Any>! = []
-    private var isConnection =  true // APIManagerModel.isReachable
+    private var isConnection = Reachability.isConnectedToNetwork()
     
     //Stored variables
     internal var isNibUsed: Bool {

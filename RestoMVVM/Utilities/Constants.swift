@@ -9,8 +9,7 @@ import UIKit
 
 /// All constants required in the app
 struct Constants {
-    static let baseUrl = "https://buttered-pewter.glitch.me"
-    static let carListUrl = "/stock/car/test/v1/listing"
+    static let jsonFile = "resto"
 }
 
 /// To show alert messages
@@ -21,4 +20,6 @@ struct AlertMsg {
     static let noInternet = "The Internet connection appears to be offline."
     static let serverError = "Internal Server error ocurred, try again after some time"
     static let noURlFound = "Url not found!"
+    static let noDataFound = "No data found!"
+
 }

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RTRestoCVCell" customModule="RestoMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_resto" translatesAutoresizingMaskIntoConstraints="NO" id="3WF-8p-XCM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnu-2h-8gA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ge-LC-i8k">
+                    <rect key="frame" x="10" y="156.5" width="35" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3a-4d-QXa">
+                    <rect key="frame" x="10" y="186" width="39.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3WF-8p-XCM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="11U-JH-v0q"/>
+                <constraint firstItem="nnu-2h-8gA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="42a-UQ-pE3"/>
+                <constraint firstItem="3WF-8p-XCM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EjT-vM-idQ"/>
+                <constraint firstItem="9Ge-LC-i8k" firstAttribute="leading" secondItem="c3a-4d-QXa" secondAttribute="leading" id="FGs-pC-lud"/>
+                <constraint firstItem="3WF-8p-XCM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GaZ-es-G9H"/>
+                <constraint firstAttribute="bottom" secondItem="nnu-2h-8gA" secondAttribute="bottom" id="MsQ-Lb-bwJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="c3a-4d-QXa" secondAttribute="bottom" constant="15" id="Nco-gO-iUm"/>
+                <constraint firstItem="c3a-4d-QXa" firstAttribute="top" secondItem="9Ge-LC-i8k" secondAttribute="bottom" constant="10" id="aU2-4r-UKW"/>
+                <constraint firstItem="c3a-4d-QXa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="bgE-Ae-ekW"/>
+                <constraint firstItem="nnu-2h-8gA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cZK-Pn-6zt"/>
+                <constraint firstAttribute="trailing" secondItem="nnu-2h-8gA" secondAttribute="trailing" id="cdS-lR-X19"/>
+                <constraint firstItem="3WF-8p-XCM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="j0g-f6-hK9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLabel" destination="c3a-4d-QXa" id="WlZ-pO-mET"/>
+                <outlet property="gradientView" destination="nnu-2h-8gA" id="sUy-rJ-yOw"/>
+                <outlet property="restoImgView" destination="3WF-8p-XCM" id="Esc-5A-9KX"/>
+                <outlet property="titleLabel" destination="9Ge-LC-i8k" id="Oum-MD-MM7"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="-157.03125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_resto" width="633" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
