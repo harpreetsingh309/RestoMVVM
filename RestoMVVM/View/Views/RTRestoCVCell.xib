@@ -28,6 +28,17 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzN-8w-02G">
+                    <rect key="frame" x="369" y="10" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6qW-kZ-jYf"/>
+                        <constraint firstAttribute="width" constant="35" id="m6E-CC-qzo"/>
+                    </constraints>
+                    <state key="normal" image="ic_star"/>
+                    <connections>
+                        <action selector="favoriteButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="OgQ-su-dy4"/>
+                    </connections>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3a-4d-QXa">
                     <rect key="frame" x="10" y="186" width="39.5" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -40,9 +51,11 @@
             <constraints>
                 <constraint firstItem="3WF-8p-XCM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="11U-JH-v0q"/>
                 <constraint firstItem="nnu-2h-8gA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="42a-UQ-pE3"/>
+                <constraint firstItem="uzN-8w-02G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="BzD-Q6-jOA"/>
                 <constraint firstItem="3WF-8p-XCM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EjT-vM-idQ"/>
                 <constraint firstItem="9Ge-LC-i8k" firstAttribute="leading" secondItem="c3a-4d-QXa" secondAttribute="leading" id="FGs-pC-lud"/>
                 <constraint firstItem="3WF-8p-XCM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GaZ-es-G9H"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uzN-8w-02G" secondAttribute="trailing" constant="10" id="Gfq-Wy-UfJ"/>
                 <constraint firstAttribute="bottom" secondItem="nnu-2h-8gA" secondAttribute="bottom" id="MsQ-Lb-bwJ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="c3a-4d-QXa" secondAttribute="bottom" constant="15" id="Nco-gO-iUm"/>
                 <constraint firstItem="c3a-4d-QXa" firstAttribute="top" secondItem="9Ge-LC-i8k" secondAttribute="bottom" constant="10" id="aU2-4r-UKW"/>
@@ -54,6 +67,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="addressLabel" destination="c3a-4d-QXa" id="WlZ-pO-mET"/>
+                <outlet property="favoriteButton" destination="uzN-8w-02G" id="WT0-qx-gQa"/>
                 <outlet property="gradientView" destination="nnu-2h-8gA" id="sUy-rJ-yOw"/>
                 <outlet property="restoImgView" destination="3WF-8p-XCM" id="Esc-5A-9KX"/>
                 <outlet property="titleLabel" destination="9Ge-LC-i8k" id="Oum-MD-MM7"/>
@@ -63,6 +77,7 @@
     </objects>
     <resources>
         <image name="ic_resto" width="633" height="256"/>
+        <image name="ic_star" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

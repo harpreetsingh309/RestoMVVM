@@ -7,7 +7,7 @@
 
 import UIKit
 /*
- FlowLayout for Car Listing
+ FlowLayout for Cells
  */
 class RTRestoCellLayout: AbstractLayout {
     

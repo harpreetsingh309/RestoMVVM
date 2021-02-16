@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct RTRestoViewModel: Codable {
-    private let restaurant: RestoListModel
+struct RTRestoViewModel {
     
+    let restaurant: RestoListModel
     var address: String {
         return restaurant.street + ", " + restaurant.city + " " + restaurant.state
     }

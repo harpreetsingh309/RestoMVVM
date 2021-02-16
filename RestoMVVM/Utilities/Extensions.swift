@@ -166,6 +166,7 @@ extension UIView {
     }
     
     func applyGradient() {
+        layer.sublayers?.filter({ $0 is CAGradientLayer }).forEach({ $0.removeFromSuperlayer() })
         let gradientLayer = CAGradientLayer()
         gradientLayer.locations = [0.0, 1.0]
         gradientLayer.colors = [
