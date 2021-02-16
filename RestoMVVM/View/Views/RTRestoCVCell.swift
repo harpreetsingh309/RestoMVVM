@@ -34,8 +34,14 @@ class RTRestoCVCell: AbstractCollectionCell {
             titleLabel.text = newModel.restaurant.name
             addressLabel.text = newModel.address
             restoImgView.image = UIImage(named: newModel.restaurant.image)
+
+            if RTAPIManager.sharedInstance.arrayFavourite.contains(where: { $0.restaurant.name == newModel.restaurant.name }) {
+                favoriteButton.setImage(UIImage(named: "ic_star"), for: .normal)
+            } else {
+                favoriteButton.setImage(UIImage(named: "ic_star_selected"), for: .normal)
+            }
             
-            // You can use SDWebImage to cache images
+// ****************** We can use SDWebImage to cache images
             /* if let imgUrl = newModel.image {
                 restoImgView.sd_setImage(with: URL(string: imgUrl), placeholderImage: #imageLiteral(resourceName: "ic_carLogo"))
              }*/

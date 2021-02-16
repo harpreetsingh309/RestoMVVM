@@ -9,6 +9,10 @@ import UIKit
 
 class RTRestoListVC: AbstractCollectionListController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        updateCell()
+    }
+    
     /// To register collection view cell class
     override var cellClass: AbstractCollectionCell.Type {
         return RTRestoCVCell.self
